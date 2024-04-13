@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Medicare_Connect</string>
-    <string name="default_web_client_id"></string>
+    <string name="default_web_client_id">ooo</string>
 
 </resources>
