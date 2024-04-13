@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back3"
+    android:paddingStart="2dp"
+    android:paddingBottom="2dp"
+    android:scrollbarSize="15dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Medicare"
+        android:layout_width="303dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="56dp"
+        android:inputType="text"
+        android:text="24/7Medicare"
+        android:textColor="@color/bleu"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/email1"
+        android:layout_width="327dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginBottom="24dp"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="2dp"
+        android:ems="10"
+        android:hint=" Email"
+        android:inputType="text|textEmailAddress"
+        android:padding="10dp"
+
+        android:paddingVertical="10dp"
+        android:paddingLeft="0dp"
+        android:textColor="@color/black"
+        android:textColorHighlight="#050505"
+        android:textColorHint="#050505"
+        android:textColorLink="#0B0A0A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/motpasse1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Medicare"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/motpasse1"
+        android:layout_width="325dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:drawableLeft="@drawable/secure"
+        android:drawablePadding="0dp"
+        android:ems="10"
+        android:hint=" Mot de passe"
+        android:inputType="text|textPassword"
+        android:outlineAmbientShadowColor="#0B0A0A"
+        android:padding="10dp"
+        android:paddingVertical="10dp"
+        android:shadowColor="#121111"
+        android:textColor="#101010"
+        android:textColorHighlight="#050505"
+        android:textColorHint="#020202"
+        android:textColorLink="#050505"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email1" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="198dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="4dp"
+        android:text="Mot de passe oublié ?"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/motpasse1" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnEnregistrer"
+        android:layout_width="242dp"
+        android:layout_height="57dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="74dp"
+        android:backgroundTint="@color/bleu"
+        android:text="Se connecter"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView5"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="148dp"
+        android:text="S'inscrire pour un nouvel utilisateur"
+        android:textColor="#100F0F"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/googleButton"
+        android:layout_width="157dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:background="@null"
+        android:backgroundTint="@color/bleu"
+        android:drawableLeft="@drawable/google"
+        android:text="Google"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/facebookButton"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/facebookButton"
+        android:layout_width="175dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:background="@null"
+        android:backgroundTint="@color/bleu"
+        android:drawableLeft="@drawable/face"
+        android:text="Facebook"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toEndOf="@id/googleButton"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

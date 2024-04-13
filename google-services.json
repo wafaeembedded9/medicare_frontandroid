@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "192611084868",
+    "project_id": "fir-medicare-962b0",
+    "storage_bucket": "fir-medicare-962b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192611084868:android:38e6c64bfaadf4344f6a11",
+        "android_client_info": {
+          "package_name": "com.ouafaa.medicare_connect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEklLHC73l2cBvkTqCFqAaf_mOGKglP1w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
