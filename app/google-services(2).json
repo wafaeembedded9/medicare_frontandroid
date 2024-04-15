@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:192611084868:android:845b09199e62b32c4f6a11",
         "android_client_info": {
-          "package_name": "com.ouafaa.medicare_connect"
+          "package_name": "com.ouafaa.medicare__connect"
         }
       },
       "oauth_client": [
@@ -47,7 +47,7 @@
           "client_id": "192611084868-8ptv7mt904oj9f9u9fj6q5cak7hp9h70.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.ouafaa.medicare_connect",
+            "package_name": "com.ouafaa.medicare__connect",
             "certificate_hash": "473b5669698a87738fdf5fad2ba84034f6ecbbfe"
           }
         },
