@@ -13,11 +13,13 @@
         android:theme="@style/Theme.Medicare_Connect"
         tools:targetApi="31">
         <activity
-            android:name=".PasswordActivity2"
+            android:name=".surveillanceActivity2"
             android:exported="false" />
-
         <activity
             android:name=".HomeActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".PasswordActivity2"
             android:exported="false" />
         <activity
             android:name=".LoginActivity2"

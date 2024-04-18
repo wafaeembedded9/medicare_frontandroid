@@ -46,8 +46,6 @@ public class LoginActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login2);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
         email1 = findViewById(R.id.email1);
         motpasse1 = findViewById(R.id.motpasse1);
         progressDialog = new ProgressDialog(this);
