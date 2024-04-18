@@ -152,6 +152,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="2000dp"
         app:layout_constraintEnd_toEndOf="@+id/motpasse1"
+        android:textColorHint="@color/black"
         app:layout_constraintHorizontal_bias="0.155"
         app:layout_constraintStart_toEndOf="@+id/motpasse1"
         app:layout_constraintTop_toTopOf="@+id/motpasse1" />
