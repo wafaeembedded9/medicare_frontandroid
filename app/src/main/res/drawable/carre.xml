@@ -1,5 +1,0 @@
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="@android:color/transparent"/>
-    <stroke android:color="@color/bleu" android:width="2dp"/>
-    <corners android:radius="0dp"/> <!-- Mettre le rayon des coins à 0 pour avoir un carré -->
-</shape>
