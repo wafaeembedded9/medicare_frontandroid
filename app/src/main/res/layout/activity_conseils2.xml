@@ -7,6 +7,18 @@
     android:background="@drawable/back4"
     tools:context=".ConseilsActivity2">
 
+    <TextView
+        android:id="@+id/frequenceTitre"
+        android:layout_width="182dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="20dp"
+        android:text="Fréquence Cardiaque"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="50dp"
@@ -38,7 +50,115 @@
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.986"
-        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/fleche7" />
+
+    <TextView
+        android:id="@+id/FrequenceTitre"
+        android:layout_width="182dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="212dp"
+        android:text="Taux d'oxygène"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="43dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/photo" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="279dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="12dp"
+        android:shadowColor="@color/black"
+        android:text="- La surveillance de La fréquence cardiaque peut fournir des informations précieuses sur la santé globale  effectivement elle se situe entre 60 et 100 bpm au repos chez les adultes en bonne santé. Des écarts significatifs de ces valeurs peuvent signaler des problèmes cardiaques potentiels nécessitant une attention médicale"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="@color/black"
+        android:textColorLink="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="72dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.501"
+        app:srcCompat="@drawable/oxygene" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="269dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="20dp"
+        android:text="-Un taux d'oxygène dans le sang supérieur à 95% est optimal, tandis que des niveaux inférieurs peuvent indiquer une hypoxémie, nécessitant une évaluation médicale pour des problèmes respiratoires ou circulatoires."
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="@color/black"
+        android:textColorLink="@color/black"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FrequenceTitre" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="5dp"
+        android:text="Température"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="23dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="112dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:srcCompat="@drawable/temp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="269dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="516dp"
+        android:text="-La température corporelle normale est de 37°C. Des températures inférieures peuvent indiquer une hypothermie, tandis que des températures supérieures à 37°C peuvent signaler une fièvre nécessitant une évaluation médicale. La surveillance attentive est essentielle pour détecter toute variation significative"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="60dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
