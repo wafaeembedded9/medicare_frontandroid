@@ -108,7 +108,7 @@
         android:layout_height="106dp"
         android:layout_marginStart="68dp"
         android:layout_marginTop="20dp"
-        android:text="-Un taux d'oxygène dans le sang supérieur à 95% est optimal, tandis que des niveaux inférieurs peuvent indiquer une hypoxémie, nécessitant une évaluation médicale pour des problèmes respiratoires ou circulatoires."
+        android:text="-Un taux d'oxygène dans le sang supérieur à 95% est optimal, tandis que des niveaux inférieurs peuvent indiquer une hypoxémie, nécessitant une évaluation médicale pour des problèmes respiratoires ou circulatoires"
         android:textColor="@color/black"
         android:textColorHighlight="@color/black"
         android:textColorHint="@color/black"
@@ -122,7 +122,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="23dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="7dp"
         android:text="Température"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -153,12 +153,13 @@
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="60dp"
-        android:layout_height="46dp"
+        android:layout_width="47dp"
+        android:layout_height="42dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="28dp"
+        android:backgroundTint="@color/bl"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageView3"
-        app:srcCompat="?attr/actionModeCloseDrawable" />
+        app:srcCompat="@android:drawable/ic_media_rew" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
