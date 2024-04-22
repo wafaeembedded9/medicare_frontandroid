@@ -12,9 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Medicare_Connect"
         tools:targetApi="31">
-        <activity
-            android:name=".LogoutActivity2"
-            android:exported="false" />
+
         <activity
             android:name=".ConseilsActivity2"
             android:exported="false"
