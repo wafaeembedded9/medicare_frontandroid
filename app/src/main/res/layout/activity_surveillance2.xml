@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/ciel"
+    android:background="@color/Cieel"
     tools:context=".surveillanceActivity2">
 
     <ImageButton
@@ -17,4 +17,126 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@android:drawable/ic_media_rew" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="408dp"
+        android:layout_height="57dp"
+        app:cardBackgroundColor="@color/ciel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="288dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="  Surveillance médicale"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="120dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="69dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView5"
+        app:srcCompat="@drawable/frequencecardiaque_svg" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="148dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginBottom="264dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:srcCompat="@drawable/saturation" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="117dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginBottom="136dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13"
+        app:srcCompat="@drawable/check_body_temperature_1_" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="157dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="120dp"
+        android:text="Rythme cardiaque :"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/cardView5" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SpO2 :"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView13"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <TextView
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="69dp"
+        android:layout_marginBottom="173dp"
+        android:text="Température :"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView17"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+    <TextView
+        android:id="@+id/rythme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/cardView5" />
+
+    <TextView
+        android:id="@+id/spo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginBottom="155dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/temp"
+        app:layout_constraintStart_toEndOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="11dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="154dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/view1"
+        app:layout_constraintTop_toBottomOf="@+id/spo2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
