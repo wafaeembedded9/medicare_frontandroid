@@ -45,6 +45,11 @@ public class Poids extends AppCompatActivity {
             return "Normal";
         if (bmi < 30.0)
             return "Surpoids";
-        return "Obésité";
+        if (bmi > 30.0 && bmi<40)
+            return "obésité";
+        if (bmi > 40)
+            return "obésité morbide";
+
+        return null;
     }
 }

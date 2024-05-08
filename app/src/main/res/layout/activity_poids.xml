@@ -7,7 +7,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/Cieel"
     tools:context=".Poids">
 
     <TextView
@@ -82,27 +82,14 @@
         android:padding="10dp"
         style="@android:style/TextAppearance.Material.Headline" />
 
-    <ImageView
-        android:id="@+id/imageView15"
-        android:layout_width="332dp"
-        android:layout_height="263dp"
-        android:src="@drawable/bimoo" />
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
 
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/bimoo" />
-
-    <ImageView
-        android:id="@+id/imageView16"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/bimoo" />
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="330dp"
+            android:layout_height="188dp"
+            android:layout_margin="20dp"
+            app:srcCompat="@drawable/imo90" />
 
 
 </LinearLayout>

@@ -7,17 +7,6 @@
     android:background="@color/Cieel"
     tools:context=".surveillanceActivity2">
 
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="64dp"
-        android:layout_height="54dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="@color/bl"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@android:drawable/ic_media_rew" />
-
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView5"
         android:layout_width="408dp"
@@ -138,5 +127,16 @@
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/view1"
         app:layout_constraintTop_toBottomOf="@+id/spo2" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="63dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="572dp"
+        android:layout_marginEnd="28dp"
+        android:backgroundTint="@color/bl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView5"
+        app:srcCompat="@android:drawable/ic_media_ff" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
