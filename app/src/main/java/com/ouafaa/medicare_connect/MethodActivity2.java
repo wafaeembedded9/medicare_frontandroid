@@ -13,13 +13,7 @@ public class MethodActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_method2);
-        ImageButton imageButton = findViewById(R.id.imageButton3);
-        imageButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MethodActivity2.this, HomeActivity2.class);
-                startActivity(intent);
-            }
-        });
+
+
     }
 }

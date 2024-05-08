@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!--set application-wide security config using base-config.-->
+    <base-config cleartextTrafficPermitted="True"></base-config>
+
+</network-security-config>

@@ -45,6 +45,9 @@ dependencies {
     implementation("com.google.firebase:firebase-database")
     implementation("com.google.android.gms:play-services-auth:21.0.0")
     implementation("androidx.cardview:cardview:1.0.0")
+    implementation ("com.squareup.okhttp3:okhttp:4.9.0")
+
+
 
 
 
