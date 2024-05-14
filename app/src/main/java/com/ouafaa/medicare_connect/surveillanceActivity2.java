@@ -35,7 +35,7 @@ public class surveillanceActivity2 extends AppCompatActivity {
             "K","C"
     };
 
-    TextView txvalue;
+    TextView txvalue,textViewHR,textViewSPO2;
     private EditText ip;
 
     private Switch switchButton;
@@ -97,7 +97,8 @@ public class surveillanceActivity2 extends AppCompatActivity {
 
 
         txvalue = (TextView ) findViewById(R.id.tx_value);
-
+        textViewHR = findViewById(R.id.textView19);
+        textViewSPO2 = findViewById(R.id.textView20);
         handler.postDelayed(status_data,0);
 
 
@@ -149,12 +150,17 @@ public class surveillanceActivity2 extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(String result_data) {
-            if(result_data !=null) {
-                txvalue.setText("Température"+result_data);
+            String[] values = result_data.split(",");
+            if (values.length >= 3) {
+                txvalue.setText("Température: " + values[0]);
+                textViewHR.setText("Rythme cardiaque: " + values[1]);
+                textViewSPO2.setText("SpO2: " + values[2]);
 
             }else{
 
-                Toast.makeText(surveillanceActivity2.this, "Null data", Toast.LENGTH_LONG).show();
+                txvalue.setText("Température: 0");
+                textViewHR.setText("Rythme cardiaque: 0" );
+                textViewSPO2.setText("SpO2: 0");
             }
         }
     }

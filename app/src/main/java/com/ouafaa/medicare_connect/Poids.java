@@ -1,9 +1,10 @@
 package com.ouafaa.medicare_connect;
 
 import androidx.appcompat.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
-
-
+import android.view.View;
+import android.widget.ImageView;
 import com.ouafaa.medicare_connect.databinding.ActivityPoidsBinding;
 
 public class Poids extends AppCompatActivity {
@@ -24,6 +25,17 @@ public class Poids extends AppCompatActivity {
 
         binding.weightPicker.setOnValueChangedListener((picker, oldVal, newVal) -> calculateBMI());
         binding.heightPicker.setOnValueChangedListener((picker, oldVal, newVal) -> calculateBMI());
+
+        // Définir un écouteur de clic pour l'image view
+        ImageView imageView = findViewById(R.id.imageView15);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Rediriger vers l'activité QstAnswer
+                Intent intent = new Intent(Poids.this, QstAnswer.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void calculateBMI() {

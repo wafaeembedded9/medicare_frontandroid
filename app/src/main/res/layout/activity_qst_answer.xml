@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ciel"
+    tools:context=".QstAnswerActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/questionContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/questionDiabetes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/Cieel"
+                android:clickable="true"
+                android:onClick="toggleAnswer"
+                android:padding="16dp"
+                android:text="Quels sont les principaux signes et symptômes du diabète ?"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/answerDiabetes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text=" Le diabète peut présenter divers signes et symptômes, notamment une soif excessive, une envie fréquente d'uriner, une fatigue inhabituelle, une vision floue, une cicatrisation lente des plaies, une sensation de faim constante et une perte de poids inexpliquée. Il est essentiel de consulter un professionnel de la santé si vous présentez ces symptômes afin d'obtenir un diagnostic précis et un traitement approprié."
+                android:visibility="gone" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/questionStress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/Cieel"
+                android:clickable="true"
+                android:onClick="toggleAnswer"
+                android:padding="16dp"
+                android:text="Comment réduire le stress quotidien et favoriser le bien-être mental ?"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/answerStress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Pour réduire le stress quotidien et favoriser le bien-être mental, il est important de pratiquer des techniques de gestion du stress telles que la méditation, la respiration profonde, le yoga ou la pleine conscience. Il est également essentiel de maintenir un mode de vie sain en faisant de l'exercice régulièrement, en ayant une alimentation équilibrée, en évitant la consommation excessive de stimulants comme la caféine et l'alcool, et en s'assurant de dormir suffisamment chaque nuit. Enfin, il est utile de prendre des pauses régulières pendant la journée pour se détendre, de passer du temps avec des amis et des proches, et de pratiquer des activités qui procurent du plaisir et du calme, comme la lecture, la musique ou les loisirs créatifs."
+                android:visibility="gone" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/questionSommeil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@color/Cieel"
+                android:clickable="true"
+                android:onClick="toggleAnswer"
+                android:padding="16dp"
+                android:text="Comment améliorer la qualité de votre sommeil ?"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/answerSommeil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Pour améliorer la qualité de votre sommeil, vous pouvez adopter des habitudes saines telles que maintenir un horaire de sommeil régulier, éviter la caféine et les activités stimulantes avant le coucher, créer un environnement propice au sommeil dans votre chambre en réduisant la lumière et le bruit, et pratiquer des techniques de relaxation comme la méditation ou la respiration profonde. Il est également important d'éviter les écrans d'appareils électroniques au moins une heure avant de vous coucher, car la lumière bleue émise peut perturber le rythme circadien naturel.
+"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/questionMove"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@color/Cieel"
+                android:clickable="true"
+                android:onClick="toggleAnswer"
+                android:padding="16dp"
+                android:text="Quels types d'activités physiques sont recommandés pour maintenir une bonne santé ?"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/answerMove"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Pour maintenir une bonne santé, il est recommandé de pratiquer une combinaison d'activités physiques aérobiques, comme la marche rapide, la course à pied, la natation ou le vélo, ainsi que des exercices de renforcement musculaire, tels que la musculation, le yoga ou la gymnastique. L'idéal est de viser au moins 150 minutes d'activité aérobique d'intensité modérée ou 75 minutes d'activité aérobique vigoureuse chaque semaine, en plus de deux séances d'exercices de renforcement musculaire par semaine."
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/questionNutr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@color/Cieel"
+                android:clickable="true"
+                android:onClick="toggleAnswer"
+                android:padding="16dp"
+                android:text="Quels aliments sont bénéfiques pour maintenir une alimentation saine et équilibrée ? "
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/answerNutr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Pour maintenir une alimentation saine et équilibrée, il est recommandé de consommer une variété d'aliments provenant de tous les groupes alimentaires. Cela inclut les fruits et légumes, qui fournissent des vitamines, des minéraux et des fibres essentiels ; les protéines maigres comme la viande maigre, le poisson, les œufs et les légumineuses ; les produits céréaliers complets tels que le riz brun, le pain complet et les pâtes complètes ; les produits laitiers faibles en matières grasses ou sans matières grasses ; et les graisses saines comme les noix, les graines et les huiles végétales. Il est également important de limiter la consommation d'aliments riches en sucres ajoutés, en gras saturés et en sel."
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/questionSkin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@color/Cieel"
+                android:clickable="true"
+                android:onClick="toggleAnswer"
+                android:padding="16dp"
+                android:text="Comment puis-je maintenir la santé de ma peau au quotidien ?"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/answerSkin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Pour protéger la santé de votre peau, il est important d'adopter une routine de soins de la peau appropriée. Cela comprend le nettoyage de la peau avec un nettoyant doux adapté à votre type de peau, l'hydratation quotidienne avec une crème hydratante non comédogène, l'application quotidienne d'une protection solaire à large spectre pour protéger la peau des rayons UV nocifs, et l'éviction de l'exposition excessive au soleil et du tabagisme, qui peuvent endommager la peau."
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/questionCrise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@color/Cieel"
+                android:clickable="true"
+                android:onClick="toggleAnswer"
+                android:padding="16dp"
+                android:text=" Quels sont les signes d'une crise cardiaque et que devrais-je faire si j'en suspecte une ?"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/answerCrise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Les signes d'une crise cardiaque peuvent varier, mais ils incluent souvent une douleur ou une sensation de pression dans la poitrine qui peut s'étendre vers le bras gauche, le cou ou la mâchoire, des nausées, des vomissements, des étourdissements, un essoufflement et une transpiration excessive. Si vous suspectez une crise cardiaque, il est essentiel d'appeler immédiatement les services d'urgence et de ne pas retarder l'obtention d'une assistance médicale. En attendant les secours, restez calme, allongez-vous si possible, mâchez et avalez de l'aspirine si vous en avez à portée de main, et suivez les instructions données par les services d'urgence par téléphone."
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
