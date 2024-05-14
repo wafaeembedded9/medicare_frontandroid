@@ -91,11 +91,5 @@
             android:layout_margin="20dp"
             app:srcCompat="@drawable/imo90" />
 
-    <ImageView
-        android:id="@+id/imageView15"
-        android:layout_width="629dp"
-        android:layout_height="62dp"
-        app:srcCompat="@drawable/question_answer_help_svgrepo_com" />
-
 
 </LinearLayout>

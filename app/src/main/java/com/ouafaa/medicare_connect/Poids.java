@@ -26,17 +26,9 @@ public class Poids extends AppCompatActivity {
         binding.weightPicker.setOnValueChangedListener((picker, oldVal, newVal) -> calculateBMI());
         binding.heightPicker.setOnValueChangedListener((picker, oldVal, newVal) -> calculateBMI());
 
-        // Définir un écouteur de clic pour l'image view
-        ImageView imageView = findViewById(R.id.imageView15);
-        imageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Rediriger vers l'activité QstAnswer
-                Intent intent = new Intent(Poids.this, QstAnswer.class);
-                startActivity(intent);
+
             }
-        });
-    }
+
 
     private void calculateBMI() {
         int height = binding.heightPicker.getValue();
