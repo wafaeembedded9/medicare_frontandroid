@@ -52,6 +52,7 @@ public class surveillanceActivity2 extends AppCompatActivity {
         switchButton = findViewById(R.id.switch1);
         ImageView imageView20 = findViewById(R.id.imageView20);
         ImageView imageView21 = findViewById(R.id.imageView21);
+        ImageView imageView23 = findViewById(R.id.imageView23);
         imageView20.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -62,6 +63,12 @@ public class surveillanceActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(surveillanceActivity2.this, Poids.class);
+                startActivity(intent);
+            }});
+        imageView23.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(surveillanceActivity2.this, StepCounter.class);
                 startActivity(intent);
             }});
 
@@ -157,16 +164,16 @@ public class surveillanceActivity2 extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(String result_data) {
-            String[] values = result_data.split(",");
-            if (values.length >= 3) {
-                txvalue.setText("Température: " + values[0]);
-                textViewHR.setText("Rythme cardiaque: " + values[1]);
-                textViewSPO2.setText("SpO2: " + values[2]);
+            String[] values = result_data.split("/");
+            if (values.length >= 2) {
+                txvalue.setText("Température:" );
+                textViewHR.setText("Rythme cardiaque: " + values[0]);
+                textViewSPO2.setText("SpO2: " + values[1]);
 
             }else{
 
-                txvalue.setText("Température: 0");
-                textViewHR.setText("Rythme cardiaque: 0" );
+                txvalue.setText("Température: 0 C");
+                textViewHR.setText("Rythme cardiaque: 0 bpm" );
                 textViewSPO2.setText("SpO2: 0");
             }
         }
