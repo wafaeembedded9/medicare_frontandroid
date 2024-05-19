@@ -2,14 +2,19 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.ouafaa.medicare_connect">
-    <uses-feature android:name="android.hardware.sensor.stepcounter" android:required="true" />
-    <uses-feature android:name="android.hardware.sensor.stepdetector" android:required="true" />
-    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION"/>
 
     <uses-sdk
         android:minSdkVersion="28"
         android:targetSdkVersion="34" />
 
+    <uses-feature
+        android:name="android.hardware.sensor.stepcounter"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.sensor.stepdetector"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -23,6 +28,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Medicare_Connect"
         tools:targetApi="31">
+        <activity
+            android:name=".Menu"
+            android:exported="false" />
         <activity
             android:name=".StepCounter"
             android:exported="false" />

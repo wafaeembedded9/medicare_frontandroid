@@ -15,6 +15,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Switch;
@@ -50,27 +51,15 @@ public class surveillanceActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_surveillance2);
         ip=(EditText) findViewById(R.id.Adresseip);
         switchButton = findViewById(R.id.switch1);
-        ImageView imageView20 = findViewById(R.id.imageView20);
-        ImageView imageView21 = findViewById(R.id.imageView21);
-        ImageView imageView23 = findViewById(R.id.imageView23);
-        imageView20.setOnClickListener(new View.OnClickListener() {
+        ImageButton imageButton_ff=findViewById(R.id.imageButton_ff);
+        imageButton_ff.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(surveillanceActivity2.this, QstAnswer.class);
+                Intent intent = new Intent(surveillanceActivity2.this, Menu.class);
                 startActivity(intent);
-            }});
-        imageView21.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(surveillanceActivity2.this, Poids.class);
-                startActivity(intent);
-            }});
-        imageView23.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(surveillanceActivity2.this, StepCounter.class);
-                startActivity(intent);
-            }});
+            }
+        });
+
 
         // Ajouter un écouteur de changement d'état au bouton de commutation
         switchButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
