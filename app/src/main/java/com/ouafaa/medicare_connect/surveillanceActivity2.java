@@ -156,13 +156,13 @@ public class surveillanceActivity2 extends AppCompatActivity {
             String[] values = result_data.split("/");
             if (values.length >= 2) {
                 txvalue.setText("Température:" );
-                textViewHR.setText("Rythme cardiaque: " + values[0]);
+                textViewHR.setText("Pulsation cardiaque: " + values[0]);
                 textViewSPO2.setText("SpO2: " + values[1]);
 
             }else{
 
                 txvalue.setText("Température: 0 C");
-                textViewHR.setText("Rythme cardiaque: 0 bpm" );
+                textViewHR.setText("Pulsation cardiaque: 0 bpm" );
                 textViewSPO2.setText("SpO2: 0");
             }
         }

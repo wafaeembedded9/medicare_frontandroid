@@ -23,7 +23,7 @@
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="202dp"
-        android:layout_height="143dp"
+        android:layout_height="107dp"
         android:layout_marginStart="80dp"
         android:layout_marginTop="1dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,27 +36,47 @@
         android:layout_height="50dp"
         android:layout_marginStart="58dp"
         android:layout_marginTop="48dp"
-        android:text="- Capteur de mesure de fréquence cardiaque et taux d'oxygène dans le sang"
+        android:text="- Capteur de mesure de  taux d'oxygène dans le sang"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
         android:id="@+id/textView14"
-        android:layout_width="270dp"
-        android:layout_height="36dp"
+        android:layout_width="280dp"
+        android:layout_height="33dp"
         android:layout_marginStart="59dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:text="- Capteur de mesure du température corporelle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="222dp"
-        android:layout_height="132dp"
+        android:layout_width="242dp"
+        android:layout_height="101dp"
         android:layout_marginStart="60dp"
         android:layout_marginTop="12dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView14"
-        app:srcCompat="@drawable/mlx90614" />
+        app:srcCompat="@drawable/capteur_temp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="265dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="15dp"
+        android:text=" -Capteur de mesure de la fréquence des battements du cœur en temps réel."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="257dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22"
+        app:srcCompat="@drawable/pulse_sensor" />
 </androidx.constraintlayout.widget.ConstraintLayout>
