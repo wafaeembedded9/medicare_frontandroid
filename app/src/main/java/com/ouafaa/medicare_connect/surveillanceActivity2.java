@@ -161,7 +161,7 @@ public class surveillanceActivity2 extends AppCompatActivity {
 
             }else{
 
-                txvalue.setText("Température: 0 C");
+                txvalue.setText("Température: 0°C");
                 textViewHR.setText("Pulsation cardiaque: 0 bpm" );
                 textViewSPO2.setText("SpO2: 0");
             }

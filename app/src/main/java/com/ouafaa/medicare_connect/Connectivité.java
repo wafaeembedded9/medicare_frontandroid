@@ -22,5 +22,5 @@ public class Connectivité {
 
         } catch (IOException error) {
             return error.toString();
-   }
-}}
+        }
+    }}
